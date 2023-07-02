@@ -144,6 +144,7 @@ scipy_signal__sigtools_linear_filter(PyObject* NPY_UNUSED(dummy), PyObject* args
         input_flag = 1;
     }
 
+    printf("%d\n", (int)(PyArray_TYPE(arX)));
     /* Skip over leading zeros in vector representing denominator (a) */
     azero = PyArray_Zero(ara);
     if (azero == NULL) {
@@ -508,21 +509,25 @@ static void double_filt(char* b, char* a, char* x, char* y, char* Z,
         ptr_a = (double*)a;
         xn = (double*)ptr_x;
         yn = (double*)ptr_y;
+        printf("šššššk = %dššššš\n", k);
         if (len_b > 1) {
             ptr_Z = ((double*)Z);
             *yn = *ptr_Z + *ptr_b * *xn;   /* Calculate first delay (output) */
+            printf("%f = %f + %f * %f\n", *yn, *ptr_Z, *ptr_b, *xn);
             ptr_b++;
             ptr_a++;
             /* Fill in middle delays */
             for (n = 0; n < len_b - 2; n++) {
                 *ptr_Z =
                     ptr_Z[1] + *xn * (*ptr_b) - *yn * (*ptr_a);
+                printf("%f = %f + %f * %f - %f * %f\n", *ptr_Z, ptr_Z[1], *xn, *ptr_b, *yn, *ptr_a);
                 ptr_b++;
                 ptr_a++;
                 ptr_Z++;
             }
             /* Calculate last delay */
             *ptr_Z = *xn * (*ptr_b) - *yn * (*ptr_a);
+            printf("%f = %f * %f - %f * %f\n", *ptr_Z, *xn, *ptr_b, *yn, *ptr_a);
         }
         else {
             *yn = *xn * (*ptr_b);
