@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "test_scipy", "test_scipy\test_scipy.pyproj", "{FBA3ACB2-6C4E-400A-AE51-F41FD4713932}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testmodule", "testmodule\testmodule.vcxproj", "{A1EA4BC5-AC12-4358-8005-E7BE66050295}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBA3ACB2-6C4E-400A-AE51-F41FD4713932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA3ACB2-6C4E-400A-AE51-F41FD4713932}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FBA3ACB2-6C4E-400A-AE51-F41FD4713932}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FBA3ACB2-6C4E-400A-AE51-F41FD4713932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA3ACB2-6C4E-400A-AE51-F41FD4713932}.Release|x64.ActiveCfg = Release|Any CPU
+		{FBA3ACB2-6C4E-400A-AE51-F41FD4713932}.Release|x86.ActiveCfg = Release|Any CPU
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Debug|Any CPU.Build.0 = Debug|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Debug|x64.ActiveCfg = Debug|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Debug|x64.Build.0 = Debug|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Debug|x86.ActiveCfg = Debug|Win32
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Debug|x86.Build.0 = Debug|Win32
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Release|Any CPU.ActiveCfg = Release|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Release|Any CPU.Build.0 = Release|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Release|x64.ActiveCfg = Release|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Release|x64.Build.0 = Release|x64
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Release|x86.ActiveCfg = Release|Win32
+		{A1EA4BC5-AC12-4358-8005-E7BE66050295}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {148274C0-BEFA-4252-8415-24C2A3EF08A5}
+	EndGlobalSection
+EndGlobal
